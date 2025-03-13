@@ -10,3 +10,8 @@ const techcoolPeople = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+// 1) ให้รวม Object ใน Array ของ Variable techupPeople และ techcoolPeople เข้าไปใน Array allPeople โดยใช้ใช้เทคนิคของ ES6 
+const allPeople = [...techupPeople, ...techcoolPeople]
+
+const peopleWithAgeBelow20 = allPeople.filter(person => person.age < 20)
+console.log(peopleWithAgeBelow20)
